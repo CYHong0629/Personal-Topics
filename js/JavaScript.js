@@ -96,26 +96,39 @@ $(window).on("load", function () {
 })
 
 //=======================================================================
-$(function(){
+$(function () {
     $('.gg-close').click(function () {
-        $('.gg-box').css({display:'none'});
+        $('.gg-box').css({ display: 'none' });
     })
 })
 // ===================================
 $(function () {
     $('.wrong').click(function (e) {
         e.preventDefault();
-        $('.gg-box').css({display:'inline'});
+        $('.gg-box').css({ display: 'inline' });
     })
 })
 
-$(function(){
-    $('.fa-bars').click(function(){
-        if ($('.title').css('display')=="none") {
-            $('.title').css({ display: 'inline'})
+$(function () {
+    $('.fa-bars').click(function () {
+        if ($('.title').css('display') == "none") {
+            $('.title').css({ display: 'inline' })
         } else {
             $('.title').css({ display: 'none' })
         }
-        
+
     })
 })
+//=======================================================================
+
+let my_text2_el = document.querySelectorAll(".my_text");
+my_text2_el.forEach(function (element) {
+  element.addEventListener("keydown", function (e) {
+    if ((e.which >= 48 && e.which <= 57) || e.which == 8) {
+      // 如果輸入的是數字或者是退格鍵，則不做任何處理
+    } else {
+      e.preventDefault();
+      alert("請輸入數字");
+    }
+  });
+});
