@@ -139,8 +139,13 @@
 
     .top ul {
         padding: 5px 3px 0px;
-        /* flex-direction: column; */
-        /* width: 300px; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .top li{
+        margin: 10px 45px;
+        width: 110px;
     }
 
     .top img {
