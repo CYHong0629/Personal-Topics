@@ -177,12 +177,19 @@ h4 {
 .check-box {
     /* position: relative; */
     position: fixed;
-    top: 30vh;
+    top: 0;
     right: 0;
     left: 0;
     margin: 0 auto;
 
-    z-index: 1;
+    display: none;
+    background-color: rgba(66,66,66,.8);
+
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+
+    z-index: 20;
 }
 
 .check {
@@ -192,11 +199,12 @@ h4 {
     max-height: 350px;
     background-color: #fff;
     opacity: .9;
-    /* top: -420px;
+    top: 30vh;
     left: 0;
-    left: 0;
-    margin: 0 auto; */
-    display: none;
+    right: 0;
+    /* margin: 0 auto; */
+    /* display: none; */
+    margin: 0 auto;
 
     z-index: 1;
 }
@@ -821,7 +829,7 @@ h4 {
 
 .abous p {
     font-size: 1.1em;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     margin: 15px 0;
 }
 
@@ -854,9 +862,10 @@ h4 {
 .abous-main {
     position: relative;
     display: flex;
-    margin: 20px auto;
+    margin: 10px auto;
     /* overflow: hidden; */
     box-sizing: border-box;
+    margin-bottom: 40px;
 }
 
 .abous-main ul {
@@ -1196,6 +1205,14 @@ h4 {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+}
+
+.supplies ul:nth-child(3) p:nth-child(2){
+   text-align: left;
+}
+
+.supplies ul:nth-child(3) li:nth-child(4) p:nth-child(2){
+    text-align: center;
 }
 
 .supplies li {

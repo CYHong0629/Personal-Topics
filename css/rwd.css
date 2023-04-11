@@ -78,17 +78,18 @@
     }
 
     .check-box {
-        max-width: 414px;
+        /* max-width: 414px; */
     }
 
     .check-close {
+        color: white;
         top: -50px;
         right: 10px;
     }
 
     .check {
         /* overflow: hidden; */
-        top: 35vw;
+        top: 35vh;
         left: 0;
         left: 0;
     }
@@ -138,24 +139,26 @@
 
     .top ul {
         padding: 5px 3px 0px;
+        /* flex-direction: column; */
+        /* width: 300px; */
     }
 
     .top img {
-        width: 30px;
+        /* width: 30px; */
         margin: 0;
     }
 
     .top p {
         margin: 0;
-        font-size: 12px;
+        /* font-size: 12px; */
     }
 
     .top span {
-        font-size: 15px;
+        /* font-size: 15px; */
     }
 
     h4 {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .out-bg {

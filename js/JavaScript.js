@@ -2,11 +2,11 @@
 $(function () {
     $('.help').click(function (e) {
         e.preventDefault();
-        $('.check').toggleClass('testtt')
+        $('.check-box').toggleClass('testtt')
     })
 
     $('.check-close').click(function () {
-        $('.check').toggleClass('testtt');
+        $('.check-box').toggleClass('testtt');
     })
 
     $('.ibon-index').click(function (e) {
@@ -22,7 +22,7 @@ $(function () {
             $('.ibon').css({ display: 'none' })
         })
 
-        $('.check').toggleClass('testtt');
+        $('.check-box').toggleClass('testtt');
     })
 
 })
