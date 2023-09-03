@@ -27,64 +27,6 @@ $(function () {
 
 })
 
-// $(window).scroll(function () {
-//     let object = $('.help');
-//     let objectOffset = object.offset();
-//     let objectWidth = object.outerWidth();
-//     let windowHeight = $(window).height();
-//     let scrollY = $(window).scrollTop();
-
-//     object.css({
-//         position: 'fixed',
-//         top: '50%',
-//         right: 0,
-//         transform: 'translateY(-50%)',
-//         // display: 'block'
-//     })
-
-//     if (objectOffset.top + objectWidth / 2 > scrollY + windowHeight) {
-//         object.css({
-//             top: scrollY + windowHeight - objectWidth / 2,
-//             transform: 'translateY(-50%)'
-//         });
-//     } else if (objectOffset.top + objectWidth / 2 < scrollY) {
-//         object.css({
-//             top: scrollY + objectWidth / 2,
-//             transform: 'translateY(-50%)'
-//         });
-//     }
-// })
-
-// $(window).scroll(function () {
-//     if($('.check').css('display')!="none"){
-//     let object = $('.check');
-//     let objectOffset = object.offset();
-//     let objectWidth = object.outerWidth();
-//     let windowHeight = $(window).height();
-//     let scrollY = $(window).scrollTop();
-
-//     object.css({
-//         position: 'fixed',
-//         top: '50%',
-//         right: 0,
-//         left: 0,
-//         transform: 'translateY(-50%)',
-//         // display: 'none'
-//     })
-
-//     if (objectOffset.top + objectWidth / 2 > scrollY + windowHeight) {
-//         object.css({
-//             top: scrollY + windowHeight - objectWidth / 2,
-//             transform: 'translateY(-50%)'
-//         });
-//     } else if (objectOffset.top + objectWidth / 2 < scrollY) {
-//         object.css({
-//             top: scrollY + objectWidth / 2,
-//             transform: 'translateY(-50%)'
-//         });
-//     }
-// }
-// })
 
 //========================================================================
 //圖片跑馬燈
@@ -96,18 +38,18 @@ $(window).on("load", function () {
 })
 
 //=======================================================================
-$(function () {
-    $('.gg-close').click(function () {
-        $('.gg-box').css({ display: 'none' });
-    })
-})
+// $(function () {
+//     $('.gg-close').click(function () {
+//         $('.gg-box').css({ display: 'none' });
+//     })
+// })
 // ===================================
-$(function () {
-    $('.wrong').click(function (e) {
-        e.preventDefault();
-        $('.gg-box').css({ display: 'inline' });
-    })
-})
+// $(function () {
+//     $('.wrong').click(function (e) {
+//         e.preventDefault();
+//         $('.gg-box').css({ display: 'inline' });
+//     })
+// })
 
 $(function () {
     $('.fa-bars').click(function () {
